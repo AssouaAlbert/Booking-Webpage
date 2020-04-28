@@ -1,0 +1,10 @@
+@mixin clear-float {
+    content: "";
+    clear: both;
+    display: table;
+}
+@mixin display-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

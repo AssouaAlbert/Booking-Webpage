@@ -1,0 +1,20 @@
+//Import variables
+@import "./abstacts/variables";
+@import "./abstacts/mixins";
+
+//Import base settings
+@import "./base/base";
+
+//Import components
+@import "./components/logo";
+@import "./components/search";
+@import "./components/user-nav";
+
+//Import layout
+@import "./layouts/header";
+@import "./layouts/content";
+@import "./layouts/hotel-view";
+@import "./layouts/sidebar";
+
+//Import page layout setting
+@import "./pages/home";

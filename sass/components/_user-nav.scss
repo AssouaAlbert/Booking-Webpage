@@ -1,0 +1,27 @@
+.user-nav {
+    background-color: greenyellow;
+    //Display fles props
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center;
+    &__icon-box {
+
+    }
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+    }
+    &__user {
+
+    }
+    &__user-photo {
+        height: 4rem;
+        border-radius: 50%;
+    }
+    &__notification {
+
+    }
+    &__user-name {
+
+    }
+}

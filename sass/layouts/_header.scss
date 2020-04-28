@@ -1,0 +1,13 @@
+.header {
+    // Temp
+    font-size: 1.5rem;
+
+    height: 7rem; //The height of the box is 50rem and the heigth of the header is 7rem
+    background-color:  #fff;
+    border-color: var(--color-grey-light-2);
+    
+    //Define flex props
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+}
