@@ -47,7 +47,7 @@
             <div class="content">
                 <nav class="side-bar">
                     <ul class="side-nav">
-                        <li class="side-nav__item">
+                        <li class="side-nav__item side-nav__item--active" >
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
                                     <use xlink:href="img/sprite.svg#icon-home"></use>
@@ -64,7 +64,7 @@
                             </a>
                         </li>
                         <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
+                            <a href="#" class="side-nav__link" active>
                                 <svg class="side-nav__icon">
                                     <use xlink:href="img/sprite.svg#icon-key"></use>
                                 </svg>
@@ -85,7 +85,52 @@
                     </div>
                 </nav>
                 <main class="hotel-view">
-                    Home Page
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <img src="./img/hotel-1.jpg" alt="Hotel image 1" class="gallery__image">
+                            <figcaption class="gallery__caption">Hotel 1</figcaption>
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="./img/hotel-2.jpg" alt="Hotel image 1" class="gallery__image">
+                            <figcaption class="gallery__caption">Hotel 2</figcaption>
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="./img/hotel-3.jpg" alt="Hotel image " class="gallery__image">
+                            <figcaption class="gallery__caption">Hotel 3</figcaption>
+                        </figure>
+                    </div>
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            Hotel Las Palmas
+                        </h1>
+                        <div class="overview__rating">
+                            <svg class="overview__icon">
+                                <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <svg class="overview__icon">
+                                <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <svg class="overview__icon">
+                                <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <svg class="overview__icon">
+                                <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <svg class="overview__icon">
+                                <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                        </div>
+                        <div class="overview__location">
+                            <svg class="overview__location-icon">
+                                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                            </svg>
+                            <button class="btn-inline">Las Palmas, Spain</button>
+                        </div>
+                        <div class="overview__voting">
+                            <div class="overview__voting-average">8</div>
+                            <div class="overview__voting-count">129</div>
+                        </div>
+                    </div>
                 </main>
             </div>
         </div>
