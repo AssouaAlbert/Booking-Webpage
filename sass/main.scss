@@ -11,11 +11,13 @@
 @import "./components/user-nav";
 @import "./components/button";
 
+
 //Import layout
 @import "./layouts/header";
 @import "./layouts/content";
 @import "./layouts/hotel-view";
 @import "./layouts/sidebar";
+@import "./layouts/detail";
 
 //Import page layout setting
 @import "./pages/home";
