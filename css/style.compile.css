@@ -400,6 +400,39 @@ body {
     font-family: sans-serif;
     color: var(--color-grey-light-2); }
 
+.cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .cta__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  padding: 2rem 6rem;
+  position: relative;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark)); }
+  .btn-visible {
+    display: inline-block; }
+  .btn-hidden {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transform: rotateX(90deg);
+    transition: all 1s; }
+  .btn:hover-hidden {
+    transform: rotateX(0deg); }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
