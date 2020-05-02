@@ -37,7 +37,11 @@
 
     & > * {
         padding: 1.5rem 3rem;
+        @media only screen and (max-width: 500px) {
+            padding: .3rem 0.5rem;
+        }
     }
+
     display: flex;
     align-items: center;
     border-bottom:var(--line);
@@ -49,6 +53,9 @@
     &__rating {
         margin-right: auto;
         display: flex;
+        @media only screen and (max-width: 500px) {
+            margin-right: 0;
+        }
         // align-items: center;
         // justify-content: space-between;
     }

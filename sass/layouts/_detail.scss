@@ -4,6 +4,10 @@
     padding: 3.5rem;
     background-color: var(--color-grey-light-1);
     border-bottom: var(--line);
+    @media only screen and (max-width:650px) {
+        padding:1.5rem;
+        flex-direction: column;
+    }
 }
 
 .description {
@@ -11,11 +15,15 @@
     padding: 3rem;
     margin-right: 3.5rem;
     box-shadow: var(--shadow-dark);
+    @media only screen and (max-width:650px) {
+        margin-right: 0;
+        margin-bottom: 3.5rem;
+    }
 }
 .paragraph:not(:last-of-type) {
     margin-bottom: 3rem;
 }
-.list {
+.list { 
     list-style: none;
     padding: 3rem 0;
     margin: 3rem 0;
@@ -33,15 +41,18 @@
             width: 1rem;
             margin-right: 0.5rem;
             // //Old Browsers
-            // background-image: url("../img/chevron-thin-right.svg");
-            // background-size: cover;
+            background-image: url("../img/chevron-thin-right.svg");
+            background-size: cover;
 
             //New Browsers: Using mask
+            @supports (-webkit-mask-image: url()) or (mask-image: url()) {
             background-color: var(--color-primary);
             -webkit-mask-image: url("../img/chevron-thin-right.svg");
             -webkit-mask-size: cover;
             mask-image: url("../img/chevron-thin-right.svg");
             mask-size: cover;
+            background-image: none;
+            }
         }
     }
 }
@@ -54,6 +65,9 @@
     }
     &__count {
         margin-right: auto;
+        @media only screen and (max-width:1110px) {
+            margin: 0 auto;
+        }
     }
     &__photo {
         box-sizing: content-box;
@@ -64,6 +78,11 @@
         &:not(:last-child) {
             margin-right: -1rem;
         }
+    }
+    @media only screen and (max-width:1110px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -81,6 +100,9 @@
     box-shadow: var(--shadow-dark);
     position: relative;
     overflow: hidden;
+    @media only screen and (max-width:500px) {
+        padding:  2rem;
+    }
     &__text {
         margin-bottom: 1rem;
         position: relative;

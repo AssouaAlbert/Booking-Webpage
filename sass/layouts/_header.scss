@@ -2,7 +2,7 @@
     // Temp
     font-size: 1.5rem;
 
-    height: 7rem; //The height of the box is 50rem and the heigth of the header is 7rem
+    // height: 7rem; //The height of the box is 50rem and the heigth of the header is 7rem
     background-color:  #fff;
     border-bottom: var(--line);
     
@@ -10,4 +10,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media only screen and (max-width:500px) {
+        flex-wrap: wrap;
+        align-items: space-between;
+    }
 }

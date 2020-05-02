@@ -7,9 +7,8 @@
     "watch:sass": "node-sass sass/main.scss css/style.compile.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
-
-    "compile:sass":"node-sass sass/main.scss css/style.compile.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "compile:sass": "node-sass sass/main.scss css/style.compile.css",
+    "prefix:css": "postcss css/style.compile.css --use autoprefixer -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
@@ -33,12 +32,13 @@
   ],
   "author": "Eloumbat Assoua Albert and Jonas Schmedtmann",
   "license": "ISC",
+  "browserlist":"last 19 version",
   "bugs": {
     "url": "https://github.com/AssouaAlbert/Booking-Webpage/issues"
   },
   "homepage": "https://github.com/AssouaAlbert/Booking-Webpage#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^7.2.6",
     "concat": "^1.0.3",
     "node-sass": "^4.14.0",
     "npm-run-all": "^4.1.5",
