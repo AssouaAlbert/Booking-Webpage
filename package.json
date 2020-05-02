@@ -32,7 +32,7 @@
   ],
   "author": "Eloumbat Assoua Albert and Jonas Schmedtmann",
   "license": "ISC",
-  "browserlist":"last 19 version",
+  "browserslist": ["last 19 version"],
   "bugs": {
     "url": "https://github.com/AssouaAlbert/Booking-Webpage/issues"
   },
